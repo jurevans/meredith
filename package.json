@@ -1,0 +1,24 @@
+{
+  "name": "meredith",
+  "version": "1.0.0",
+  "description": "Meredith Corp Code Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log,package-lock.json,yarn.lock --copy-files",
+    "start": "yarn run build && node dist/index.js"
+  },
+  "author": "Justin R. Evans",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
