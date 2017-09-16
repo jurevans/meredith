@@ -39,6 +39,7 @@ axios.get(firstStepURL)
 
         const nextEndpoint = settings.getPath(getSolution(), token);
 
+        /** Refactor to continue executing requests until operations_remaining is zero! "addToDate" would have to be implemented first */
         console.log('nextEndpoint', nextEndpoint);
 
         axios.get(nextEndpoint)
